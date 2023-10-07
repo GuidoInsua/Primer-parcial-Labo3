@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla Dinámica</title>
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+</head>
+<body>
+    <div id="primerForm">
+        <h4 id="tituloForm">Form Datos</h4>
+        
+        <div id="dropDown">
+            <p>Filtrar por: </p>
+            <select id="filtros">
+                <option value="todos">Todos</option>
+                <option value="terrestre">Terrestre</option>
+                <option value="aereo">Aereo</option>
+            </select>
+        </div>
+        
+        <div id="checkboxes">
+            <label><input type="checkbox" id="chkId" checked> ID</label>
+            <label><input type="checkbox" id="chkModelo" checked> Modelo</label>
+            <label><input type="checkbox" id="chkAñofab" checked> Año fab</label>
+            <label><input type="checkbox" id="chkVelmax" checked> Vel max</label>
+            <label><input type="checkbox" id="chkAltmax" checked> Alt max</label>
+            <label><input type="checkbox" id="chkAutonomia" checked> Autonomia</label>
+            <label><input type="checkbox" id="chkCantpue" checked> Cant pue</label>
+            <label><input type="checkbox" id="chkCantrue" checked> Cant rue</label>
+        </div>
+
+        <div id="promedioVel">
+            <p>Promedio Velocidad Maxima: </p>
+            <input type="text" id="txtPromedio">
+            <button id="calcular">Calcular</button>
+        </div>
+
+        <br>
+
+        <div id="tabla"> 
+            <table id="tablaHeader">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Modelo</th>
+                        <th>Año fab</th>
+                        <th>Vel max</th>
+                        <th>Alt max</th>
+                        <th>Autonomia</th>
+                        <th>Cant pue</th>
+                        <th>Cant rue</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo"></tbody>
+            </table>
+        </div>
+
+        <br>
+        <button class="ultimo" id="agregar">Agregar</button>
+    </div>
+
+    <br>
+
+    <div id="ABM">
+        <h4>Form ABM</h4>
+        <div id="entradas">
+            <label for="id">Id:</label>
+            <input type="text" id="id">
+            <br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo">
+            <br>
+            <label for="ano">Año de fabricacion:</label>
+            <input type="text" id="ano">
+            <br>
+            <label for="velMax">Velocidad maxima:</label>
+            <input type="text" id="velMax">
+            <br>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="terrestre">Terrestre</option>
+                <option value="aereo">Aereo</option>
+            </select>
+            <br>
+            <label for="altMax">Altura maxima:</label>
+            <input type="text" id="altMax">
+            <br>
+            <label for="aut">Autonomia:</label>
+            <input type="text" id="aut">
+            <br>
+            <label for="cantPuer">Cantidad Puertas:</label>
+            <input type="text" id="cantPuer">
+            <br>
+            <label for="cantRued">CantidadRuedas:</label>
+            <input type="text" id="cantRued">
+            <br>
+        </div>
+        <div id="botonesABM">
+            <br>
+            <button>Agregar</button>
+            <button>Modificar</button>
+            <button>Eliminar</button>
+            <button class="ultimo" id="cancelar">Cancelar</button>
+        </div>
+    </div>
+    
+    <script src="Codigo.js"></script>
+</body>
+</html>

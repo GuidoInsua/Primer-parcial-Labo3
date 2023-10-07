@@ -1,0 +1,65 @@
+body {
+    background-color: #c9721b; /* Cambia este valor al color que desees */
+}
+
+#primerForm, #ABM
+{
+  border: 2px solid #000; /* Agrega un borde al div */
+  background-color: blanchedalmond;
+}
+
+#dropDown, #promedioVel
+{
+    display: flex;
+    align-items: center;
+    margin-left: 5px; 
+}
+
+select, input, button
+{
+    margin-left: 10px; 
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+th 
+{
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+td.highlight 
+{
+    background-color: yellow;
+}
+table.custom 
+{
+    border: 2px solid #333;
+}
+td.rounded 
+{
+    border-radius: 10px;
+}
+
+.ultimo 
+{
+    margin-bottom: 20px;
+}
+  
+  
+  
+  
+
