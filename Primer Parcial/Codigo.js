@@ -160,7 +160,7 @@ var txtPromedio = document.getElementById("txtPromedio");
 btnCalcular.addEventListener("click", function(){
   var sumaVelocidades = ultimoArray.reduce((acumulador, vehiculo) => 
   {
-    return acumulador + vehiculo.velMax;
+    return parseInt(acumulador) + parseInt(vehiculo.velMax);
   }, 0);
 
   var promedioVelocidades = sumaVelocidades / ultimoArray.length;
