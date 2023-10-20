@@ -63,46 +63,51 @@
     <div id="ABM">
         <h4>Form ABM</h4>
         <div id="entradas">
-            <label for="id">Id:</label>
-            <input type="text" id="id">
+            <label for="idAbm">Id:</label>
+            <input type="text" id="idAbm" disabled>
             <br>
-            <label for="modelo">Modelo:</label>
-            <input type="text" id="modelo">
+            <label for="modeloAbm">Modelo:</label>
+            <input type="text" id="modeloAbm">
             <br>
-            <label for="ano">Año de fabricacion:</label>
-            <input type="text" id="ano">
+            <label for="anioAbm">Año de fabricacion:</label>
+            <input type="text" id="anioAbm">
             <br>
-            <label for="velMax">Velocidad maxima:</label>
-            <input type="text" id="velMax">
+            <label for="velMaxAbm">Velocidad maxima:</label>
+            <input type="text" id="velMaxAbm">
             <br>
-            <label for="tipo">Tipo:</label>
-            <select id="tipo">
+            <label for="tipoAbm">Tipo:</label>
+            <select id="tipoAbm">
                 <option value="terrestre">Terrestre</option>
                 <option value="aereo">Aereo</option>
             </select>
             <br>
-            <label for="altMax">Altura maxima:</label>
-            <input type="text" id="altMax">
-            <br>
-            <label for="aut">Autonomia:</label>
-            <input type="text" id="aut">
-            <br>
-            <label for="cantPuer">Cantidad Puertas:</label>
-            <input type="text" id="cantPuer">
-            <br>
-            <label for="cantRued">CantidadRuedas:</label>
-            <input type="text" id="cantRued">
-            <br>
+            <div id="datosAereos">
+                <label for="altMaxAbm">Altura maxima:</label>
+                <input type="text" id="altMaxAbm">
+                <br>
+                <label for="autonomiaAbm">Autonomia:</label>
+                <input type="text" id="autonomiaAbm">
+                <br>
+            </div>
+            <div id="datosTerrestres">
+                <label for="cantPueAbm">Cantidad Puertas:</label>
+                <input type="text" id="cantPueAbm">
+                <br>
+                <label for="cantRueAbm">CantidadRuedas:</label>
+                <input type="text" id="cantRueAbm">
+                <br>
+            </div>
         </div>
         <div id="botonesABM">
             <br>
-            <button>Agregar</button>
-            <button>Modificar</button>
-            <button>Eliminar</button>
+            <button id="agregarAbm">Agregar</button>
+            <button id="modificar">Modificar</button>
+            <button id="eliminar">Eliminar</button>
             <button class="ultimo" id="cancelar">Cancelar</button>
         </div>
     </div>
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="Codigo.js"></script>
 </body>
 </html>
